@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleTableViewCell" id="KGk-i7-Jjw" customClass="ScheduleTableViewCell" customModule="ArcTouchChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fm-VF-HvS">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdr-uO-mTg">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9fm-VF-HvS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="1t3-rl-hfG"/>
+                    <constraint firstItem="qdr-uO-mTg" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Hkq-jV-TkI"/>
+                    <constraint firstItem="9fm-VF-HvS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pcn-UT-LXi"/>
+                    <constraint firstItem="qdr-uO-mTg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XsB-pD-hex"/>
+                    <constraint firstItem="9fm-VF-HvS" firstAttribute="width" secondItem="qdr-uO-mTg" secondAttribute="width" id="u4B-1D-LZV"/>
+                    <constraint firstItem="qdr-uO-mTg" firstAttribute="leading" secondItem="9fm-VF-HvS" secondAttribute="trailing" id="zTA-VO-5ae"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="calendar" destination="9fm-VF-HvS" id="6Nj-EU-XIh"/>
+                <outlet property="time" destination="qdr-uO-mTg" id="wda-0r-pI0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
